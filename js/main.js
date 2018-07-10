@@ -17,16 +17,16 @@ isInteger = false;
 // expression that looks at the value of `isSafeInteger`. When `isSafeInteger`
 // becomes `true`, the `while` loop should stop looping.
 
-while (!isInteger){// In order for the maxNumber to be "legit" we need to know:
+while (!isInteger) {// In order for the maxNumber to be "legit" we need to know:
 // 1. It's an integer
 // 2. It's over zero
 
 // TODO: Inside `while` loop prompt the user for the `maxNumber` value.
-maxNumber = prompt ('Enter a number over 0 (must be an integer):',20);
+maxNumber = prompt ('Enter a number over 0 (must be an integer):', 20);
 
 // TODO: Inside the `while` loop, use a conditional to verify if the `maxNumber`
 // is a suitable integer. (It should be an integer greater than zero.)
-maxNumber = parseInt(maxNumber);
+maxNumber = parseInt (maxNumber);
 if (Number.isSafeInteger(maxNumber) && maxNumber > 0){
     isInteger = true;
 }
@@ -40,7 +40,7 @@ if (Number.isSafeInteger(maxNumber) && maxNumber > 0){
 fbResults = [];
 // TODO: Create a `for` loop that will execute the `maxNumber` of times.
 
-for (let i=1; i <= maxNumber;i++){
+for (let i=1; i <= maxNumber; i++) {
     if (i % 15 == 0) {
         fbResults.push('FizzBuzz');
     } else if (i % 3 == 0) {
