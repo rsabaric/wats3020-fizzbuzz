@@ -10,10 +10,16 @@ let isInteger,
 // TODO: Initialize a variable `isInteger` to use as a control value for the
 // `while` loop. Set the initial value to `false`.
 
+isInteger = false;
+
 // TODO: Create a `while` loop so user will be prompted to enter a number until
 // they enter a good number. This loop should be controlled by a conditional
 // expression that looks at the value of `isSafeInteger`. When `isSafeInteger`
 // becomes `true`, the `while` loop should stop looping.
+
+while (!isInteger){// In order for the maxNumber to be "legit" we need to know:
+// 1. It's an integer
+// 2. It's over zero
 
 // TODO: Inside `while` loop prompt the user for the `maxNumber` value.
 
@@ -22,6 +28,10 @@ let isInteger,
 
 // TODO: If the value of `maxNumber` is suitable, then change the value of
 // `isInteger` so the `while` loop stops looping.
+
+}
+
+
 
 // TODO: Initialize the `fbResults` variable to an empty Array
 
