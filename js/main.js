@@ -1,4 +1,5 @@
 /* Code for WATS 3020 FizzBuzz Assignment */
+//Rosie Sabaric Summer 2018
 
 let isInteger,
     maxNumber,
