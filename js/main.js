@@ -48,7 +48,7 @@ for (let i=1; i <= maxNumber; i++) {
     } else if (i % 5 == 0) {
         fbResults.push('Buzz');
     } else {
-        fbResults.push(1);
+        fbResults.push(i);
     }
 
 }
