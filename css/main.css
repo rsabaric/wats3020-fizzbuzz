@@ -8,7 +8,10 @@ pre {
     padding: 2rem;
     background: coral;
     font-size: 1.5rem;
+}
 
+pre#output {
+    margin: 2rem;
 }
 
 body {
