@@ -34,7 +34,7 @@ if (Number.isSafeInteger(maxNumber) && maxNumber > 0){
     alert (alertWarn + " is not a valid integer. Please enter a number greaten than 0.");
 
 } else if (maxNumber <= 0){
-    alert ("This number is less than or equal to 0. Please enter a number greater than 0.");
+    alert (maxNumber + " is less than or equal to 0. Please enter a number greater than 0.");
 
 }
 }
