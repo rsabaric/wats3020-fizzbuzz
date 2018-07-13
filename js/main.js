@@ -4,7 +4,8 @@
 let isInteger,
     maxNumber,
     fbResults,
-    fbText;
+    fbText,
+    alertWarn;
 
 
 // `isInteger` used as a control value for the
@@ -24,11 +25,18 @@ maxNumber = prompt ('Enter a number over 0 (must be an integer):', 20);
 
 // Inside the `while` loop, used a conditional to verify if the `maxNumber`
 // is a suitable integer.(integer should be greater than zero.)
+alertWarn = maxNumber;
 maxNumber = parseInt (maxNumber);
 if (Number.isSafeInteger(maxNumber) && maxNumber > 0){
     isInteger = true;
-}
+    
+} else if (!Number.isSafeInteger(maxNumber)){
+    alert (alertWarn + " is not a valid integer. Please enter a number greaten than 0.");
 
+} else if (maxNumber <= 0){
+    alert ("This number is less than or equal to 0. Please enter a number greater than 0.");
+
+}
 }
 
 // Initialized the `fbResults` variable to an empty Array
