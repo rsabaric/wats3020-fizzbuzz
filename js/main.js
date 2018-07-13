@@ -13,7 +13,7 @@ let isInteger,
 isInteger = false;
 
 // Created a `while` loop so user will be prompted to enter a number until
-// they enter a good number. This loop should be controlled by a conditional
+// they enter a good number. This loop is controlled by a conditional
 // expression that looks at the value of `isSafeInteger`. When `isSafeInteger`
 // becomes `true`, the `while` loop should stop looping.
 
@@ -23,7 +23,7 @@ while (!isInteger) {
 maxNumber = prompt ('Enter a number over 0 (must be an integer):', 20);
 
 // Inside the `while` loop, used a conditional to verify if the `maxNumber`
-// is a suitable integer. (integer should be greater than zero.)
+// is a suitable integer.(integer should be greater than zero.)
 maxNumber = parseInt (maxNumber);
 if (Number.isSafeInteger(maxNumber) && maxNumber > 0){
     isInteger = true;
@@ -48,8 +48,8 @@ for (let i=1; i <= maxNumber; i++) {
 
 }
 
-// Created logic inside the `for` loop to calculate FizzBuzz.  This will
-// require the use of several conditional statements that use the `%` operator.
+// Created logic inside the `for` loop to calculate FizzBuzz.  This 
+// requires the use of several conditional statements that use the `%` operator.
 // Store the results of this logic in an array called `fbResults`.
 
 fbText = '';
