@@ -7,6 +7,7 @@ let isInteger,
     fbText,
     alertWarn;
 
+// created alertWarn variable for alert message
 
 // `isInteger` used as a control value for the
 // `while` loop. Set the initial value to `false`.
@@ -29,7 +30,8 @@ alertWarn = maxNumber;
 maxNumber = parseInt (maxNumber);
 if (Number.isSafeInteger(maxNumber) && maxNumber > 0){
     isInteger = true;
-    
+
+// alert messages for user    
 } else if (!Number.isSafeInteger(maxNumber)){
     alert (alertWarn + " is not a valid integer. Please enter a number greaten than 0.");
 
